@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume - Anand Pinnamaneni</title>
+    <meta charset="UTF-8">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 50px auto; 
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 { color: #333; }
+        .section { margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Anand Pinnamaneni</h1>
+    <p>Email: pinnamanenianand177@gmail.com | Phone: +1 --------</p>
+    
+    <div class="section">
+        <h2>Professional Experience</h2>
+        <h3>Salesforce - Associate Technical Support Engineer (Aug 2023 - Present)</h3>
+        <ul>
+            <li>Analyzed performance issues in Salesforce CRM cloud systems</li>
+            <li>Used Splunk for log tracing across Apex, queues, databases</li>
+            <li>Reported internal issues, communicated limits to clients</li>
+        </ul>
+    </div>
+    
+    <p style="margin-top: 50px; text-align: center; color: #666;">
+        Note: This is a placeholder. Replace with actual PDF resume file.
+    </p>
+</body>
+</html>
