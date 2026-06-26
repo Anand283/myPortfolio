@@ -28,77 +28,63 @@
       
       <div class="card-container">
         <div class="project-card" onclick="openModal('modal1')">
-          <img src="images/tempesticon.jpg" alt="Tempest Trips" class="card-image">
           <div class="card-content">
-            <h3>Tempest Trips</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A comprehensive travel platform built with modern web technologies.</p>
+            <h3>CPU Ray Tracer</h3>
+            <p>From-scratch CPU path tracer implementing full Monte Carlo path tracing — Lambertian, Metal, and Dielectric materials with Schlick Fresnel, depth of field via aperture disk sampling, and anti-aliasing. Renders a 485-sphere procedural scene at 1200×675, 100 samples/pixel, 50 bounce depth. No GPU, no rendering library.</p>
             <div class="tech-stack">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">React</span>
+              <span class="tech-tag">C++17</span>
+              <span class="tech-tag">Ray Tracing</span>
+              <span class="tech-tag">Monte Carlo</span>
+              <span class="tech-tag">Graphics</span>
             </div>
           </div>
         </div>
+
         <div class="project-card" onclick="openModal('modal2')">
-          <img src="images/survivalgame.webp" alt="Survival Game" class="card-image">
           <div class="card-content">
-            <h3>Survival Game</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. An immersive Unity-based game with intelligent AI.</p>
+            <h3>2D Object Recognition</h3>
+            <p>Real-time object recognition from live camera feed. Segments foreground via k-means histogram clustering, isolates regions with a custom grassfire DFS, extracts fill ratio / aspect ratio / Hu moment features, and classifies against a runtime-trained CSV database using scaled Euclidean distance.</p>
             <div class="tech-stack">
-              <span class="tech-tag">Unity</span>
-              <span class="tech-tag">C#</span>
-              <span class="tech-tag">AI</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">Real-time</span>
             </div>
           </div>
         </div>
 
         <div class="project-card" onclick="openModal('modal3')">
-          <img src="images/tempesticon.jpg" alt="E-Commerce Platform" class="card-image">
           <div class="card-content">
-            <h3>E-Commerce Platform</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+            <h3>Structure from Motion Pipeline</h3>
+            <p>SfM pipeline with classical (SIFT) and learned (DISK+LightGlue) feature matching, solvePnP pose estimation, and 3D point cloud reconstruction on EPFL benchmark datasets.</p>
             <div class="tech-stack">
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">SfM</span>
+              <span class="tech-tag">3D Reconstruction</span>
             </div>
           </div>
         </div>
 
         <div class="project-card" onclick="openModal('modal4')">
-          <img src="images/survivalgame.webp" alt="Data Analytics Dashboard" class="card-image">
           <div class="card-content">
-            <h3>Data Analytics Dashboard</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Real-time data visualization and analytics.</p>
+            <h3>Distributed Key-Value Store</h3>
+            <p>Sharded distributed KV store with Write-Ahead Logging, Rendezvous Hashing, and a custom binary protocol. Achieved 9k–11k ops/sec with p95 latency under 50ms.</p>
             <div class="tech-stack">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">D3.js</span>
-              <span class="tech-tag">PostgreSQL</span>
-            </div>
-          </div>
-        </div>
-        <div class="project-card" onclick="openModal('modal5')">
-          <img src="images/tempesticon.jpg" alt="Mobile App" class="card-image">
-          <div class="card-content">
-            <h3>Mobile Fitness App</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cross-platform mobile application for fitness tracking.</p>
-            <div class="tech-stack">
-              <span class="tech-tag">React Native</span>
-              <span class="tech-tag">Firebase</span>
-              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Distributed Systems</span>
+              <span class="tech-tag">WAL</span>
+              <span class="tech-tag">Consistent Hashing</span>
             </div>
           </div>
         </div>
 
-        <div class="project-card" onclick="openModal('modal6')">
-          <img src="images/survivalgame.webp" alt="AI Chatbot" class="card-image">
+        <div class="project-card" onclick="openModal('modal5')">
           <div class="card-content">
-            <h3>AI Customer Support Bot</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Intelligent chatbot with natural language processing.</p>
+            <h3>Calendar App</h3>
+            <p>Collaborative calendar application built in Java.</p>
             <div class="tech-stack">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">TensorFlow</span>
-              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Java</span>
             </div>
           </div>
         </div>
@@ -109,41 +95,18 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal1')">&times;</span>
-      <div class="modal-header">
-        <img src="images/tempesticon.jpg" alt="Tempest Trips">
-      </div>
       <div class="modal-body">
-        <h2>Tempest Trips</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. This comprehensive travel platform revolutionizes how users plan and book their journeys.</p>
-        
-        <h3>Project Overview</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. The platform integrates multiple APIs and services to provide a seamless booking experience.</p>
-        
+        <h2>CPU Ray Tracer</h2>
+        <p>From-scratch CPU path tracer implementing full Monte Carlo path tracing — Lambertian, Metal, and Dielectric materials with Schlick Fresnel, depth of field via aperture disk sampling, and anti-aliasing. Renders a 485-sphere procedural scene at 1200×675, 100 samples/pixel, 50 bounce depth. No GPU, no rendering library.</p>
         <h3>Technologies Used</h3>
         <div class="tech-stack">
-          <span class="tech-tag">Java</span>
-          <span class="tech-tag">Spring Boot</span>
-          <span class="tech-tag">React.js</span>
-          <span class="tech-tag">MySQL</span>
-          <span class="tech-tag">Docker</span>
-          <span class="tech-tag">AWS</span>
-          <span class="tech-tag">Redis</span>
+          <span class="tech-tag">C++17</span>
+          <span class="tech-tag">Ray Tracing</span>
+          <span class="tech-tag">Monte Carlo</span>
+          <span class="tech-tag">Graphics</span>
         </div>
-        
-        <h3>Key Features</h3>
-        <ul style="margin-left: 1.5rem; margin-top: 1rem; color: var(--text-light); line-height: 1.8;">
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-          <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
-          <li>Ut enim ad minim veniam, quis nostrud exercitation</li>
-          <li>Duis aute irure dolor in reprehenderit in voluptate</li>
-          <li>Excepteur sint occaecat cupidatat non proident</li>
-        </ul>        
-        <h3>Challenges & Solutions</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. The main challenge was integrating multiple third-party APIs while maintaining performance. We solved this by implementing a robust caching strategy and asynchronous processing.</p>
-        
         <div style="margin-top: 2rem;">
-          <a href="https://github.com" target="_blank" class="btn">View on GitHub</a>
-          <a href="#" class="btn btn-secondary" style="margin-left: 1rem;">Live Demo</a>
+          <a href="https://github.com/Anand283/rayTracer" target="_blank" class="btn">View on GitHub</a>
         </div>
       </div>
     </div>
@@ -152,39 +115,18 @@
   <div id="modal2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal2')">&times;</span>
-      <div class="modal-header">
-        <img src="images/survivalgame.webp" alt="Survival Game">
-      </div>
       <div class="modal-body">
-        <h2>Survival Game</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. An immersive Unity-based survival game featuring intelligent enemy AI, strategic gameplay mechanics, and dynamic environments.</p>
-        
-        <h3>Game Overview</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Players must navigate through challenging environments while managing resources and avoiding intelligent enemies.</p>
-        
+        <h2>2D Object Recognition</h2>
+        <p>Real-time object recognition from live camera feed. Segments foreground via k-means histogram clustering, isolates regions with a custom grassfire DFS, extracts fill ratio / aspect ratio / Hu moment features, and classifies against a runtime-trained CSV database using scaled Euclidean distance.</p>
         <h3>Technologies Used</h3>
         <div class="tech-stack">
-          <span class="tech-tag">Unity 3D</span>
-          <span class="tech-tag">C#</span>
-          <span class="tech-tag">AI Programming</span>
-          <span class="tech-tag">Shader Graph</span>
-          <span class="tech-tag">Photon Network</span>
-        </div>        
-        <h3>Game Features</h3>
-        <ul style="margin-left: 1.5rem; margin-top: 1rem; color: var(--text-light); line-height: 1.8;">
-          <li>Advanced AI behavior patterns with state machines</li>
-          <li>Dynamic day-night cycle affecting gameplay</li>
-          <li>Procedural level generation for replayability</li>
-          <li>Multiplayer support for cooperative gameplay</li>
-          <li>Custom shader effects for atmospheric visuals</li>
-        </ul>
-        
-        <h3>Development Process</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. The development focused on creating engaging gameplay mechanics while optimizing performance for various platforms.</p>
-        
+          <span class="tech-tag">C++</span>
+          <span class="tech-tag">OpenCV</span>
+          <span class="tech-tag">Computer Vision</span>
+          <span class="tech-tag">Real-time</span>
+        </div>
         <div style="margin-top: 2rem;">
-          <a href="https://github.com" target="_blank" class="btn">View Source</a>
-          <a href="#" class="btn btn-secondary" style="margin-left: 1rem;">Play Demo</a>
+          <a href="https://github.com/Anand283/2D-Object_Recognition" target="_blank" class="btn">View on GitHub</a>
         </div>
       </div>
     </div>
@@ -193,33 +135,18 @@
   <div id="modal3" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal3')">&times;</span>
-      <div class="modal-header">
-        <img src="images/tempesticon.jpg" alt="E-Commerce Platform">
-      </div>
       <div class="modal-body">
-        <h2>E-Commerce Platform</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A modern e-commerce solution with real-time inventory management, secure payment processing, and personalized user experiences.</p>        
+        <h2>Structure from Motion Pipeline</h2>
+        <p>SfM pipeline with classical (SIFT) and learned (DISK+LightGlue) feature matching, solvePnP pose estimation, and 3D point cloud reconstruction on EPFL benchmark datasets.</p>
         <h3>Technologies Used</h3>
         <div class="tech-stack">
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">Express.js</span>
-          <span class="tech-tag">MongoDB</span>
-          <span class="tech-tag">Vue.js</span>
-          <span class="tech-tag">Stripe API</span>
-          <span class="tech-tag">Elasticsearch</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">OpenCV</span>
+          <span class="tech-tag">SfM</span>
+          <span class="tech-tag">3D Reconstruction</span>
         </div>
-        
-        <h3>Key Features</h3>
-        <ul style="margin-left: 1.5rem; margin-top: 1rem; color: var(--text-light); line-height: 1.8;">
-          <li>Real-time inventory tracking and management</li>
-          <li>Secure payment processing with multiple gateways</li>
-          <li>Advanced search and filtering capabilities</li>
-          <li>Personalized product recommendations</li>
-          <li>Admin dashboard with analytics</li>
-        </ul>
-        
         <div style="margin-top: 2rem;">
-          <a href="https://github.com" target="_blank" class="btn">GitHub Repository</a>
+          <a href="https://github.com/Anand283/Computer_Vision_P5" target="_blank" class="btn">View on GitHub</a>
         </div>
       </div>
     </div>
@@ -229,14 +156,17 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal4')">&times;</span>
       <div class="modal-body">
-        <h2>Data Analytics Dashboard</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A comprehensive analytics platform providing real-time insights and interactive data visualizations.</p>        <h3>Technologies Used</h3>
+        <h2>Distributed Key-Value Store</h2>
+        <p>Sharded distributed KV store with Write-Ahead Logging, Rendezvous Hashing, and a custom binary protocol. Achieved 9k–11k ops/sec with p95 latency under 50ms.</p>
+        <h3>Technologies Used</h3>
         <div class="tech-stack">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">D3.js</span>
-          <span class="tech-tag">PostgreSQL</span>
-          <span class="tech-tag">Flask</span>
-          <span class="tech-tag">Chart.js</span>
+          <span class="tech-tag">C++</span>
+          <span class="tech-tag">Distributed Systems</span>
+          <span class="tech-tag">WAL</span>
+          <span class="tech-tag">Consistent Hashing</span>
+        </div>
+        <div style="margin-top: 2rem;">
+          <a href="https://github.com/jtpwang/distributed-kv-store" target="_blank" class="btn">View on GitHub</a>
         </div>
       </div>
     </div>
@@ -246,31 +176,14 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal5')">&times;</span>
       <div class="modal-body">
-        <h2>Mobile Fitness App</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cross-platform mobile application designed to help users track their fitness goals and maintain healthy habits.</p>
+        <h2>Calendar App</h2>
+        <p>Collaborative calendar application built in Java.</p>
         <h3>Technologies Used</h3>
         <div class="tech-stack">
-          <span class="tech-tag">React Native</span>
-          <span class="tech-tag">Firebase</span>
-          <span class="tech-tag">Redux</span>
-          <span class="tech-tag">Health APIs</span>
+          <span class="tech-tag">Java</span>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="modal6" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal6')">&times;</span>
-      <div class="modal-body">
-        <h2>AI Customer Support Bot</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. An intelligent chatbot leveraging natural language processing to provide automated customer support.</p>
-        <h3>Technologies Used</h3>
-        <div class="tech-stack">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">TensorFlow</span>
-          <span class="tech-tag">NLP</span>
-          <span class="tech-tag">Flask</span>
+        <div style="margin-top: 2rem;">
+          <a href="https://github.com/hauha46/Calendar" target="_blank" class="btn">View on GitHub</a>
         </div>
       </div>
     </div>
